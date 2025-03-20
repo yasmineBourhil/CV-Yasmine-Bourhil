@@ -1,0 +1,123 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace; /* Monospace font for a code-like feel */
+    background-color: #000000; /* Black background */
+    color: #f1f1f1; /* Light text color for contrast */
+    line-height: 1.6;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #000000;
+    padding: 50px 0;
+    text-align: center;
+    border-bottom: 2px solid #444; /* Subtle border to separate header */
+}
+
+h1.name {
+    font-size: 3rem;
+    color: #00FF00; /* Neon green like terminal text */
+}
+
+.degree {
+    font-size: 1.2rem;
+    color: #FFEB3B; /* Yellow for the degree */
+}
+
+.bio {
+    font-size: 1rem;
+    margin-top: 20px;
+    color: #ccc; /* Light gray text */
+}
+
+.contact a {
+    color: #FF4081; /* Pink for the email link */
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Experience, Education, Projects, Hobbies Section Styles */
+section {
+    background-color: #000000;
+    padding: 40px 0;
+    color: #f1f1f1;
+    border-top: 1px solid #444; /* Subtle border for separation */
+    opacity: 0; /* Start with elements hidden */
+    transform: translateY(50px); /* Start with elements offset */
+    transition: opacity 1s, transform 1s; /* Smooth transition when animated */
+}
+
+section.visible {
+    opacity: 1; /* Make elements visible */
+    transform: translateY(0); /* Bring them into place */
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #00FF00; /* Neon green for section title */
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase; /* Make section titles more techy */
+}
+
+.job h3, .edu-item h3, .project h3 {
+    font-size: 1.8rem;
+    color: #FF4081; /* Pink for job/project titles */
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #f1f1f1;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #444; /* Border for footer separation */
+}
+
+footer a {
+    color: #FFEB3B; /* Yellow for footer links */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Smooth Scroll Animation */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
